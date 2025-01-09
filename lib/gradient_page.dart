@@ -9,11 +9,11 @@ class GradientPage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(colors: [
-          const Color.fromARGB(255, 122, 70, 212),
           const Color.fromARGB(255, 71, 38, 128),
+          const Color.fromARGB(255, 122, 70, 212),
         ], begin: Alignment.topLeft, end: Alignment.bottomRight),
       ),
-      child: Center(
+      child: const Center(
         child: HomePage(),
       ),
     );
