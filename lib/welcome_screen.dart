@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen(this.switchScreen, {super.key});
+
+  final void Function() switchScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +14,7 @@ class HomePage extends StatelessWidget {
         Image.asset(
           'assets/images/quiz-logo.png',
           width: 350,
+          color: const Color.fromARGB(100, 255, 255, 255),
         ),
         const Text(
           'Learn Flutter the fun way!',
@@ -19,7 +22,7 @@ class HomePage extends StatelessWidget {
         ),
         FilledButton.icon(
           icon: const Icon(Icons.arrow_right_alt),
-          onPressed: () {},
+          onPressed: switchScreen,
           label: const Text(
             'Start Quiz',
             style: TextStyle(fontSize: 16),

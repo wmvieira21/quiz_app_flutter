@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/gradient_page.dart';
+import 'package:quiz_app/quiz.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      title: 'Quiz app',
-      home: Scaffold(
-        body: GradientPage(),
-      ),
-    ),
-  );
+  runApp(const Quiz());
 }
