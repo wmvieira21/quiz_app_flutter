@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen(this.switchScreen, {super.key});
@@ -16,9 +17,13 @@ class WelcomeScreen extends StatelessWidget {
           width: 350,
           color: const Color.fromARGB(100, 255, 255, 255),
         ),
-        const Text(
+        Text(
           'Learn Flutter the fun way!',
-          style: TextStyle(color: Colors.white, fontSize: 24),
+          style: GoogleFonts.lato(
+              textStyle: Theme.of(context).textTheme.displayLarge,
+              color: Colors.white,
+              fontSize: 26,
+              fontStyle: FontStyle.italic),
         ),
         FilledButton.icon(
           icon: const Icon(Icons.arrow_right_alt),
