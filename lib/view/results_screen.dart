@@ -55,9 +55,9 @@ class ResultsScreen extends StatelessWidget {
             child: QuestionsSummary(summaryData: summaryData),
           ),
           FilledButton.icon(
-            icon: const Icon(Icons.restart_alt_sharp),
+            icon: const Icon(Icons.refresh),
             onPressed: onRestartQuiz,
-            label: Text(
+            label: const Text(
               'Restart quiz',
               style: TextStyle(fontSize: 16),
             ),
