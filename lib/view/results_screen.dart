@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/data/questions.dart';
-import 'package:quiz_app/questions_summary.dart';
+import 'package:quiz_app/widgets/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen(
@@ -35,7 +35,7 @@ class ResultsScreen extends StatelessWidget {
 
     getSummaryData();
     return Container(
-      width: double.infinity,
+      //width: double.infinity,
       margin: EdgeInsets.symmetric(horizontal: 30, vertical: 60),
       child: Column(
         spacing: 30,
@@ -50,7 +50,10 @@ class ResultsScreen extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          QuestionsSummary(summaryData: summaryData),
+          Flexible(
+            flex: 1,
+            child: QuestionsSummary(summaryData: summaryData),
+          ),
           FilledButton.icon(
             icon: const Icon(Icons.restart_alt_sharp),
             onPressed: onRestartQuiz,

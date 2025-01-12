@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/answer_text.dart';
-import 'package:quiz_app/question_number_text.dart';
+import 'package:quiz_app/widgets/summary_answer_text.dart';
+import 'package:quiz_app/widgets/result_question_identifier.dart';
 
 class QuestionsSummary extends StatelessWidget {
   const QuestionsSummary({super.key, required this.summaryData});
@@ -10,30 +10,34 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 300,
+      //height: 500,
       child: SingleChildScrollView(
         child: Column(
           children: summaryData.map((data) {
             return Row(
+              //can be broken in one widget
               spacing: 10,
               children: [
-                QuestionNumberText(
-                    index: (data['question_index'] as int),
-                    color: (data['userAnswer'] == data['corretAnswer']
-                        ? Colors.blueAccent
-                        : Colors.purpleAccent)),
+                ResultQuestionIdentifier(
+                    correctAnswer: data['corretAnswer'].toString(),
+                    userAnswer: data['userAnswer'].toString(),
+                    index: (data['question_index'] as int)),
                 Expanded(
                   child: Column(
                     children: [
+                      SizedBox(height: 15),
                       SummaryQuestionText(
                           text: data['question'].toString(),
-                          color: Colors.white),
+                          color: Colors.white,
+                          fontsize: 18),
                       SummaryQuestionText(
                           text: data['userAnswer'].toString(),
-                          color: Colors.purpleAccent),
+                          color: Colors.purpleAccent,
+                          fontsize: 16),
                       SummaryQuestionText(
                           text: data['corretAnswer'].toString(),
-                          color: Colors.blueAccent),
+                          color: Colors.blueAccent,
+                          fontsize: 16),
                     ],
                   ),
                 ),
