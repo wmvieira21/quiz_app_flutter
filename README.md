@@ -1,16 +1,11 @@
-# quiz_app
+## Flutter app
 
-A new Flutter project.
+# About
+Developed a Quiz app using Flutter. It features a welcome screen as well as the main quiz screen displaying all the Flutter-related questions and their possible answers.
+Once all the questions have been answered, the user is taken to the results screen, which summarize the questions and present the user's score;
 
-## Getting Started
+### Technologies
+- Flutter
+- Dart
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Demo:![quiz_app](https://github.com/user-attachments/assets/5855cab9-938e-457e-9914-d8b4ec3ab066)
