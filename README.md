@@ -8,4 +8,6 @@ Once all the questions have been answered, the user is taken to the results scre
 - Flutter
 - Dart
 
-#### Demo:![quiz_app](https://github.com/user-attachments/assets/5855cab9-938e-457e-9914-d8b4ec3ab066)
+#### Demo:
+
+![quiz_app](https://github.com/user-attachments/assets/5855cab9-938e-457e-9914-d8b4ec3ab066)
