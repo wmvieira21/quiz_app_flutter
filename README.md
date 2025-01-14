@@ -2,7 +2,7 @@
 
 # About
 Developed a Quiz app using Flutter. It features a welcome screen as well as the main quiz screen displaying all the Flutter-related questions and their possible answers.
-Once all the questions have been answered, the user is taken to the results screen, which summarize the questions and present the user's score;
+Once all the questions have been answered, the user is taken to the results screen, which summarizes the questions and presents the user's score;
 
 ### Technologies
 - Flutter
